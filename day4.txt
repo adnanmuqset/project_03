@@ -1,0 +1,180 @@
+ https://adnanmuqset.github.io/project_03/.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">about us</a></li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="#"><img src="images/logo10.png"></a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- header -->
+
+	<!-- Form section -->
+	<section class="FormSection">
+		<div class="Form-box">
+			<h1>Sign up / registration Form is Here</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+			<form>
+				<input type="text" placeholder="Full Name">
+				<input type="email" placeholder="Enter Email Address">
+				<input type="password" placeholder="Enter a Password">
+				<input type="password" placeholder="re-type Password">
+				<b><label>Upload Your Image</label></b>
+				<input type="file">
+				<span>Please Upload a Passport size Photo</span>
+				
+				<b><label>Select Your Gender</label></b>
+				<input type="radio" name="gender" id="male"> <label for="male">Male</label>
+				<input type="radio" name="gender" id="female"> <label for="female">Female</label>
+				<input type="radio" name="gender" id="other"> <label for="other">Other</label>
+				<b><label>Select Your Hobies</label></b>
+                <input type="checkbox" id="traveling"> <label for="traveling">traveling</label>
+				<input type="checkbox" id="movies"> <label for="movies">watching movies</label>
+				<input type="checkbox" id="music"> <label for="music">listening music</label>
+				<br>
+				<input type="checkbox" id="games"> <label for="games">playing games</label>
+				<input type="checkbox" id="books"> <label for="books">reading books</label>
+				<input type="submit" value="Submit your information">
+
+			</form>
+		</div>
+	</section>
+	<!-- Form section -->
+
+</body>
+</html>
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	
+}
+img{
+    max-width: 100%;
+}
+header{
+	
+background: #8fa05b;
+}
+
+nav{
+	
+}
+nav ul{
+	
+display: flex;
+	
+justify-content: center;
+	
+flex-wrap: wrap;
+	
+align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{color: yellow;text-decoration: none;display: block;padding: 10px 20px;text-transform: capitalize;}
+nav ul li a img{
+    width: 100px;
+}
+
+
+.FormSection{padding: 50px 0;background-image: url(../images/3.jpg);background-size: contain;background-repeat: no-repeat;background-position: center;background-color: #eceae8a6;background-blend-mode: saturation;}
+.Form-box{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+    color: #8fa05b;
+}
+p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+form{
+    text-align: left;
+    margin-top: 30px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"]
+{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #8fa05b;
+    margin-bottom: 15px;
+    color: #8fa05b;
+}
+input[type="file"]{
+	margin-bottom: 0px;}
+
+label{
+    font-size: 17px;
+    font-style: italic;
+    margin-right: 20px;
+}
+span{
+	display: block;
+	font-style: italic;
+	font-size: 14px;
+
+
+}
+
+b label{
+	font-size: 25px;
+	display: block;
+	margin-top: 15px;
+	font-style: normal;
+
+}
+
+input[type="submit"]{
+	
+display: block;
+	
+padding: 10px 30px;
+	
+font-size: 18px;
+	
+background-color: #a5af86;
+	
+border: 2px solid #949a81;
+cursor: pointer;
+margin-top: 25px;
+	}
+input[type="submit"]:hover{
+	background-color: transparent;
+}input:focus{
+	outline: none;
+}
+
+::placeholder{
+color: #949a81
+}
+::selection{
+color: #949a81
+}
